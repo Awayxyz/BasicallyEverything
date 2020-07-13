@@ -1,8 +1,8 @@
 package com.patrickssonxyz.basicallyeverything.util;
 
 import com.patrickssonxyz.basicallyeverything.BasicallyEverything;
-import com.patrickssonxyz.basicallyeverything.blocks.BlockItemBase;
 import com.patrickssonxyz.basicallyeverything.items.ItemBase;
+import com.patrickssonxyz.basicallyeverything.tools.ModItemTiers;
 import net.minecraft.item.*;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -23,7 +23,7 @@ public class ItemInit {
     public static final RegistryObject<Item> RUBY = ITEMS.register("ruby", ItemBase::new);
 
     public static final RegistryObject<SwordItem> RUBY_SWORD = ITEMS.register("ruby_sword",
-            () -> new SwordItem(ModItemTiers.RUBY, 7, 3.6f, new Item.Properties().group(BasicallyEverything.RUBY_TAB)));
+            () -> new SwordItem(ModItemTiers.RUBY, 7, 3.8f, new Item.Properties().group(BasicallyEverything.RUBY_TAB)));
 
     public static final RegistryObject<PickaxeItem> RUBY_PICKAXE = ITEMS.register("ruby_pickaxe",
             () -> new PickaxeItem(ModItemTiers.RUBY, 4, 2.4f, new Item.Properties().group(BasicallyEverything.RUBY_TAB)));

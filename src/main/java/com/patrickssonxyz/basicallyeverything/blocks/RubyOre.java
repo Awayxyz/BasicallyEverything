@@ -19,14 +19,14 @@ public class RubyOre extends Block {
                 .hardnessAndResistance(4.0f, 3.0f)
                 .sound(SoundType.STONE)
                 .harvestLevel(3)
-                .harvestTool(ToolType.PICKAXE)  
+                .harvestTool(ToolType.PICKAXE)
 
         );
     }
 
     @Override
     public int getExpDrop(BlockState state, IWorldReader reader, BlockPos pos, int fortune, int silktouch) {
-        return silktouch == 0 ? 25 : 0;
+        return silktouch == 0 ? 250 : 0;
     }
 
 

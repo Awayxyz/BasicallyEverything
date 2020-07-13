@@ -1,8 +1,8 @@
-package com.patrickssonxyz.basicallyeverything.util;
+package com.patrickssonxyz.basicallyeverything.tools;
 
+import com.patrickssonxyz.basicallyeverything.util.ItemInit;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.util.LazyValue;
 
 import java.util.function.Supplier;
 
@@ -19,7 +19,7 @@ public enum ModItemTiers implements IItemTier {
     private final float efficiency;
     private final float attackDamage;
     private final int enchantability;
-    private final LazyValue<Ingredient> repairMaterial;
+    private final Supplier<Ingredient> repairMaterial;
 
     private ModItemTiers(int harvestLevel, int maxUses, float efficiency, float attackDamage, int enchantability, Supplier<Ingredient> repairMaterial) {
         this.harvestLevel = harvestLevel;
@@ -27,32 +27,28 @@ public enum ModItemTiers implements IItemTier {
         this.efficiency = efficiency;
         this.attackDamage = attackDamage;
         this.enchantability = enchantability;
-        this.repairMaterial = new LazyValue<>(repairMaterial);
+        this.repairMaterial = repairMaterial;
     }
 
 
     @Override
     public int getMaxUses() {
-        return this.maxUses;
+        return maxUses;
     }
     @Override
     public float getEfficiency() {
-        return this.efficiency;
+        return efficiency;
     }
     @Override
     public float getAttackDamage() {
-        return this.attackDamage;
+        return attackDamage;
     }
     @Override
     public int getHarvestLevel() {
-        return this.harvestLevel;
+        return harvestLevel;
     }
     @Override
-    public int getEnchantability() {
-        return this.enchantability;
-    }
+    public int getEnchantability() { return enchantability; }
     @Override
-    public Ingredient getRepairMaterial() {
-        return this.repairMaterial.getValue();
-    }
+    public Ingredient getRepairMaterial() { return repairMaterial.get(); }
 }

@@ -1,9 +1,13 @@
 {
   "item.basicallyeverything.ruby": "Ruby",
+  "item.basicallyeverything.ruby_apple": "Ruby Apple",
   "itemGroup.rubyTab": "Ruby",
+
+
   "block.basicallyeverything.ruby_block": "Ruby Block",
   "block.basicallyeverything.ruby_ore": "Ruby Ore",
-  "item.minecraft.diamond_pickaxe": "Dia krumpík",
+
+
   "item.basicallyeverything.ruby_sword": "Ruby Sword",
   "item.basicallyeverything.ruby_pickaxe": "Ruby Pickaxe",
   "item.basicallyeverything.ruby_axe": "Ruby Axe",

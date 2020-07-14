@@ -14,7 +14,7 @@ public class RubyApple extends Item {
                 .group(BasicallyEverything.RUBY_TAB)
                 .food(new Food.Builder()
                         .hunger(10)
-                        .saturation(9.6f)
+                        .saturation(1.2f)
                         .fastToEat()
                         .setAlwaysEdible()
                         .effect(new EffectInstance(Effects.ABSORPTION, 3600, 3), 1.0f)

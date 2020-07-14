@@ -5,6 +5,7 @@ import com.patrickssonxyz.basicallyeverything.blocks.BlockItemBase;
 import com.patrickssonxyz.basicallyeverything.blocks.RubyBlock;
 import com.patrickssonxyz.basicallyeverything.blocks.RubyOre;
 import net.minecraft.block.Block;
+import net.minecraft.block.OreBlock;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;

@@ -3,6 +3,7 @@ package com.patrickssonxyz.basicallyeverything.items;
 import com.patrickssonxyz.basicallyeverything.BasicallyEverything;
 import net.minecraft.item.Food;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Rarity;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
@@ -23,7 +24,8 @@ public class RubyApple extends Item {
                         .effect(new EffectInstance(Effects.RESISTANCE, 200, 0), 0.1f)
                         .build()
                 )
-                .maxStackSize(16)
                 .rarity(Rarity.RARE));
     }
+
+
 }

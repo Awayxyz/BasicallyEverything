@@ -1,6 +1,7 @@
 package com.patrickssonxyz.basicallyeverything.util;
 
 import com.patrickssonxyz.basicallyeverything.BasicallyEverything;
+import com.patrickssonxyz.basicallyeverything.items.EnchantedRubyApple;
 import com.patrickssonxyz.basicallyeverything.items.ItemBase;
 import com.patrickssonxyz.basicallyeverything.items.RubyApple;
 import com.patrickssonxyz.basicallyeverything.tools.ModItemTiers;
@@ -23,6 +24,7 @@ public class ItemInit {
     // Items
     public static final RegistryObject<Item> RUBY = ITEMS.register("ruby", ItemBase::new);
     public static final RegistryObject<RubyApple> RUBY_APPLE = ITEMS.register("ruby_apple", RubyApple::new);
+    public static final RegistryObject<EnchantedRubyApple> ENCHANTED_RUBY_APPLE = ITEMS.register("enchanted_ruby_apple", EnchantedRubyApple::new);
 
 
 

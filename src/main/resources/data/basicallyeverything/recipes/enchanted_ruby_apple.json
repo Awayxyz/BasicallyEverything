@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EXE",
+    "X#X",
+    "XXX"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:enchanted_golden_apple"
+    },
+    "X": {
+      "item": "basicallyeverything:ruby_block"
+    },
+    "E": {
+      "item": "minecraft:emerald_block"
+    }
+  },
+  "result": {
+    "item": "basicallyeverything:enchanted_ruby_apple"
+  }
+}

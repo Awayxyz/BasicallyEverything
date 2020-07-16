@@ -13,5 +13,10 @@
   "item.basicallyeverything.ruby_pickaxe": "Ruby Pickaxe",
   "item.basicallyeverything.ruby_axe": "Ruby Axe",
   "item.basicallyeverything.ruby_shovel": "Ruby Shovel",
-  "item.basicallyeverything.ruby_hoe": "Ruby Hoe"
+  "item.basicallyeverything.ruby_hoe": "Ruby Hoe",
+
+  "item.basicallyeverything.ruby_helmet": "Ruby Helmet",
+  "item.basicallyeverything.ruby_chestplate": "Ruby Chestplate",
+  "item.basicallyeverything.ruby_leggings": "Ruby Leggings",
+  "item.basicallyeverything.ruby_boots": "Ruby Boots"
 }

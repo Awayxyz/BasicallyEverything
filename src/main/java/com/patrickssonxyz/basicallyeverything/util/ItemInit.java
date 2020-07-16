@@ -1,15 +1,19 @@
 package com.patrickssonxyz.basicallyeverything.util;
 
 import com.patrickssonxyz.basicallyeverything.BasicallyEverything;
+import com.patrickssonxyz.basicallyeverything.armor.ModArmorMaterial;
 import com.patrickssonxyz.basicallyeverything.items.EnchantedRubyApple;
 import com.patrickssonxyz.basicallyeverything.items.ItemBase;
 import com.patrickssonxyz.basicallyeverything.items.RubyApple;
 import com.patrickssonxyz.basicallyeverything.tools.ModItemTiers;
+import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+
+import java.rmi.registry.Registry;
 
 public class ItemInit {
 
@@ -28,6 +32,7 @@ public class ItemInit {
 
 
 
+    // Tools
     public static final RegistryObject<SwordItem> RUBY_SWORD = ITEMS.register("ruby_sword",
             () -> new SwordItem(ModItemTiers.RUBY, 7, 3.8f, new Item.Properties().group(BasicallyEverything.RUBY_TAB)));
 
@@ -43,7 +48,16 @@ public class ItemInit {
     public static final RegistryObject<HoeItem> RUBY_HOE = ITEMS.register("ruby_hoe",
             () -> new HoeItem(ModItemTiers.RUBY, 2.0f, new Item.Properties().group(BasicallyEverything.RUBY_TAB)));
 
+    // Armor
+    public static final RegistryObject<ArmorItem> RUBY_HELMET = ITEMS.register("ruby_helmet",
+            () -> new ArmorItem(ModArmorMaterial.RUBY, EquipmentSlotType.HEAD, new Item.Properties().group(BasicallyEverything.RUBY_TAB)));
 
+    public static final RegistryObject<ArmorItem> RUBY_CHESTPLATE = ITEMS.register("ruby_chestplate",
+            () -> new ArmorItem(ModArmorMaterial.RUBY, EquipmentSlotType.CHEST, new Item.Properties().group(BasicallyEverything.RUBY_TAB)));
 
+    public static final RegistryObject<ArmorItem> RUBY_LEGGINGS = ITEMS.register("ruby_leggings",
+            () -> new ArmorItem(ModArmorMaterial.RUBY, EquipmentSlotType.LEGS, new Item.Properties().group(BasicallyEverything.RUBY_TAB)));
 
+    public static final RegistryObject<ArmorItem> RUBY_BOOTS = ITEMS.register("ruby_boots",
+            () -> new ArmorItem(ModArmorMaterial.RUBY, EquipmentSlotType.FEET, new Item.Properties().group(BasicallyEverything.RUBY_TAB)));
 }

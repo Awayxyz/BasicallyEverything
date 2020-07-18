@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "basicallyeverything:block/level2furnace" },
+    "facing=south": { "model": "basicallyeverything:block/level2furnace", "y":  180},
+    "facing=west": { "model": "basicallyeverything:block/level2furnace", "y":  270},
+    "facing=east": { "model": "basicallyeverything:block/level2furnace", "y":  90}
+  }
+}

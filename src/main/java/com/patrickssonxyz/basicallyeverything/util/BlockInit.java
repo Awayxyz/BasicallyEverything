@@ -2,6 +2,7 @@ package com.patrickssonxyz.basicallyeverything.util;
 
 import com.patrickssonxyz.basicallyeverything.BasicallyEverything;
 import com.patrickssonxyz.basicallyeverything.blocks.BlockItemBase;
+import com.patrickssonxyz.basicallyeverything.blocks.Level2Furnace;
 import com.patrickssonxyz.basicallyeverything.blocks.RubyBlock;
 import com.patrickssonxyz.basicallyeverything.blocks.RubyOre;
 import net.minecraft.block.Block;
@@ -31,10 +32,14 @@ public class BlockInit {
 
     public static final RegistryObject<Block> RUBY_ORE = BLOCKS.register("ruby_ore", RubyOre::new);
 
+    public static final RegistryObject<Block> LEVEL_2_FURNACE = BLOCKS.register("level2furnace", Level2Furnace::new);
+
     // Block Items
     public static final RegistryObject<Item> RUBY_BLOCK_ITEM = ITEMS.register("ruby_block", () -> new BlockItemBase(RUBY_BLOCK.get()));
 
     public static final RegistryObject<Item> RUBY_ORE_ITEM = ITEMS.register("ruby_ore", () -> new BlockItemBase(RUBY_ORE.get()));
+
+    public static final RegistryObject<Item> LEVEL_2_FURNACE_ITEM = ITEMS.register("level2furnace", () -> new BlockItemBase(LEVEL_2_FURNACE.get()));
 
 
 }

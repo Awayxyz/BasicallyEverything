@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:furnace"
+    }
+  },
+  "result":
+  {
+    "item": "basicallyeverything:level2furnace",
+    "count": 1
+  }
+}

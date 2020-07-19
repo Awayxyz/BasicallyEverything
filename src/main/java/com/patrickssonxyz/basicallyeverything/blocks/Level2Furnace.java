@@ -26,8 +26,7 @@ public class Level2Furnace extends Block {
                 .hardnessAndResistance(3.5F)
                 .harvestLevel(1)
                 .harvestTool(ToolType.PICKAXE)
-                .sound(SoundType.ANVIL)
-                .lightValue(13));
+                .sound(SoundType.ANVIL));
 
     }
 
@@ -52,8 +51,4 @@ public class Level2Furnace extends Block {
         builder.add(FACING);
     }
 
-    @Override
-    public float getAmbientOcclusionLightValue(BlockState state, IBlockReader worldIn, BlockPos pos) {
-        return 0.8F;
-    }
 }

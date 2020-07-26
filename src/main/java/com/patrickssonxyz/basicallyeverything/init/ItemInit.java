@@ -1,11 +1,11 @@
-package com.patrickssonxyz.basicallyeverything.util;
+package com.patrickssonxyz.basicallyeverything.init;
 
 import com.patrickssonxyz.basicallyeverything.BasicallyEverything;
-import com.patrickssonxyz.basicallyeverything.armor.ModArmorMaterial;
+import com.patrickssonxyz.basicallyeverything.util.enums.ModArmorMaterial;
 import com.patrickssonxyz.basicallyeverything.items.EnchantedRubyApple;
 import com.patrickssonxyz.basicallyeverything.items.ItemBase;
 import com.patrickssonxyz.basicallyeverything.items.RubyApple;
-import com.patrickssonxyz.basicallyeverything.tools.ModItemTiers;
+import com.patrickssonxyz.basicallyeverything.util.enums.ModItemTiers;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraftforge.fml.RegistryObject;
@@ -13,11 +13,9 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
-import java.rmi.registry.Registry;
-
 public class ItemInit {
 
-    public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, BasicallyEverything.MOD_ID);
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, BasicallyEverything.MOD_ID);
 
     public static void init() {
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
@@ -46,7 +44,9 @@ public class ItemInit {
             () -> new ShovelItem(ModItemTiers.RUBY, 4, 2.0f, new Item.Properties().group(BasicallyEverything.RUBY_TAB)));
 
     public static final RegistryObject<HoeItem> RUBY_HOE = ITEMS.register("ruby_hoe",
-            () -> new HoeItem(ModItemTiers.RUBY, 2.0f, new Item.Properties().group(BasicallyEverything.RUBY_TAB)));
+            () -> new HoeItem(ModItemTiers.RUBY, 1, 2.0f, new Item.Properties().group(BasicallyEverything.RUBY_TAB)));
+
+
 
     // Armor
     public static final RegistryObject<ArmorItem> RUBY_HELMET = ITEMS.register("ruby_helmet",

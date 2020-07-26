@@ -2,11 +2,10 @@ package com.patrickssonxyz.basicallyeverything.world.gen;
 
 
 import com.patrickssonxyz.basicallyeverything.BasicallyEverything;
-import com.patrickssonxyz.basicallyeverything.util.BlockInit;
+import com.patrickssonxyz.basicallyeverything.init.BlockInit;
 import net.minecraft.block.BlockState;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.GenerationStage;
-import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
 import net.minecraft.world.gen.placement.ConfiguredPlacement;

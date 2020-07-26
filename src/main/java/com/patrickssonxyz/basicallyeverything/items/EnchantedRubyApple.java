@@ -26,7 +26,6 @@ public class EnchantedRubyApple extends Item {
                         .effect(new EffectInstance(Effects.STRENGTH, 1200, 1), 1.0f)
                         .effect(new EffectInstance(Effects.SPEED, 300, 0), 1.0f)
                         .build()
-
                 )
                 .rarity(Rarity.EPIC));
     }

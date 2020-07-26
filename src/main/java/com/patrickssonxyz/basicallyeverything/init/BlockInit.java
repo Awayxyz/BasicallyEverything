@@ -1,4 +1,4 @@
-package com.patrickssonxyz.basicallyeverything.util;
+package com.patrickssonxyz.basicallyeverything.init;
 
 import com.patrickssonxyz.basicallyeverything.BasicallyEverything;
 import com.patrickssonxyz.basicallyeverything.blocks.BlockItemBase;
@@ -15,8 +15,8 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 public class BlockInit {
 
-    public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS, BasicallyEverything.MOD_ID);
-    public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, BasicallyEverything.MOD_ID);
+    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, BasicallyEverything.MOD_ID);
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, BasicallyEverything.MOD_ID);
 
 
     public static void init() {
@@ -33,6 +33,8 @@ public class BlockInit {
     public static final RegistryObject<Block> RUBY_ORE = BLOCKS.register("ruby_ore", RubyOre::new);
 
     public static final RegistryObject<Block> LEVEL_2_FURNACE = BLOCKS.register("level2furnace", Level2Furnace::new);
+
+
 
     // Block Items
     public static final RegistryObject<Item> RUBY_BLOCK_ITEM = ITEMS.register("ruby_block", () -> new BlockItemBase(RUBY_BLOCK.get()));

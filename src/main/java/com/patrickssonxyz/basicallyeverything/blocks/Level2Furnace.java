@@ -26,7 +26,9 @@ public class Level2Furnace extends Block {
                 .hardnessAndResistance(3.5F)
                 .harvestLevel(1)
                 .harvestTool(ToolType.PICKAXE)
-                .sound(SoundType.ANVIL));
+                .sound(SoundType.ANVIL)
+                .setRequiresTool()
+        );
 
     }
 

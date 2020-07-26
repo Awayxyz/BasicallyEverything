@@ -1,6 +1,6 @@
-package com.patrickssonxyz.basicallyeverything.tools;
+package com.patrickssonxyz.basicallyeverything.util.enums;
 
-import com.patrickssonxyz.basicallyeverything.util.ItemInit;
+import com.patrickssonxyz.basicallyeverything.init.ItemInit;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.crafting.Ingredient;
 

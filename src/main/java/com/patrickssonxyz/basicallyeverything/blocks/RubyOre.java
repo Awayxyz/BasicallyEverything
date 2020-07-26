@@ -21,7 +21,7 @@ public class RubyOre extends OreBlock {
                 .sound(SoundType.STONE)
                 .harvestLevel(3)
                 .harvestTool(ToolType.PICKAXE)
-
+                .setRequiresTool()
         );
     }
 
